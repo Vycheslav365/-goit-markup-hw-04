@@ -177,11 +177,19 @@ body {
 .top__line-info a {
 	color: #757575;
 }
-.top__line-info :hover{
+.top__line-info-email :hover{
 	fill:#2196F3;
 	color: #2196F3;
 }
-.top__line-info :focus{
+.top__line-info-email :focus{
+	fill:#2196F3;
+	color: #2196F3;
+}
+.top__line-info-tel :hover{
+	fill:#2196F3;
+	color: #2196F3;
+}
+.top__line-info-tel :focus{
 	fill:#2196F3;
 	color: #2196F3;
 }
@@ -356,7 +364,7 @@ body {
 
 .team__title {
 	margin-bottom: 50px;
-	font-weight: 500;
+	font-weight: bold;
 	font-size: 36px;
 	line-height: 1.16;
 	text-align: center;
@@ -383,7 +391,7 @@ margin-right: 0;
 	padding: 30px 0;
 }
 .team-card-title {
-	font-weight: bold;
+	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.18;
 	text-align: center;
@@ -404,13 +412,22 @@ margin-right: 0;
 	display: flex;
 	justify-content: center;
 }
-.team-social-link {
+.team-social-link {	
+	display: flex;
+	justify-content: center;
+	
   width: 44px;
 	height: 44px;
   border-radius: 50%;
 	display: flex;
 	justify-content: center;
   align-items: center;fill: #AFB1B8;
+}
+.team-social-li{
+	margin-right: 10px;
+}
+.team-social-li:last-child{
+	margin-right: 0;
 }
 .team-social-svg {
 	width: 20px;
