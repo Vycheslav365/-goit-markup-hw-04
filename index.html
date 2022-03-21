@@ -24,24 +24,22 @@
 						<li class="top__line-nav-li nav__li-1">
 							<a href="./index.html">Студия</a>
 						</li>
-						<li class="top__line-nav-li nav__li-2">
+						<li class="top__line-nav-li">
 							<a href="./portfolio.html">Портфолио</a>
 						</li>
-						<li class="top__line-nav-li nav__li-3">
+						<li class="top__line-nav-li">
 							<a href="#">Контакты</a>
 						</li>
 					</ul>
 				</nav>
 				<ul class="top__line-info">
 					<li class="top__line-info-email">
-						<a href="mailto:info@devstudio.com">
-							<svg class="top__line-info-icon" width="16" height="12">
+						<a href="#" data-modal-open><svg class="top__line-info-icon" width="16" height="12">
 								<use href="images/symbol-defs.svg#icon-email"></use>
 							</svg>info@devstudio.com</a>
 					</li>
 					<li class="top__line-info-tel">
-						<a href="tel:+380961111111">
-							<svg class="top__line-info-icon" width="10" height="16">
+						<a href="tel:+380961111111"><svg class="top__line-info-icon" width="10" height="16">
 								<use href="images/symbol-defs.svg#icon-phone"></use>
 							</svg>+38 096 111 11 11</a>
 					</li>
@@ -94,12 +92,15 @@
 				<ul class="classes__image">
 					<li>
 						<img src="images/img.jpg" alt="руки" class="classes-img classes-img1" width="370" height="294">
+						<h2 class="classes-image-sabtitle">Десктопные приложения</h2>
 					</li>
 					<li>
 						<img src="images/img2.jpg" alt="ноутбук" class="classes-img classes-img2" width="370" height="294">
+						<h2 class="classes-image-sabtitle">Мобильные приложения</h2>
 					</li>
 					<li>
 						<img src="images/img3.jpg" alt="палитра" class="classes-img classes-img3" width="370" height="294">
+						<h2 class="classes-image-sabtitle">Дизайнерские решения</h2>
 					</li>
 				</ul>
 			</div>
@@ -332,6 +333,12 @@
 			</section>
 		</div>
 	</footer>
+	<div class="backdrop is-hidden" data-modal>
+		<div class="modal">
+			<button class="modal-btn" data-modal-close></button>
+		</div>
+	</div>
+	<script src="js/modal.js"></script>
 </body>
 
 </html>
